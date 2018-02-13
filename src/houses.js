@@ -51,7 +51,7 @@ export const getHouse = id => {
             href: attribs['href'],
             source_url: baseURL + attribs['href']
           })).toArray()
-          : val.text()
+          : val.text().trim()
 
         data[key] = val
       })

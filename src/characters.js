@@ -19,8 +19,8 @@ export const getCharactersList = () => {
           const character = $elem.children('a').first()
           scrapedData.characters.push({
             id,
-            name: $elem.text(),
-            shortName: character.text(),
+            name: $elem.text().trim(),
+            shortName: character.text().trim(),
             href: character.attr('href'),
             source_url: baseURL + character.attr('href'),
             details_url: `http://localhost:8888/scrape/character/${id}`
