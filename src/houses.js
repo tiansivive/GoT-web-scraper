@@ -1,11 +1,11 @@
 import {
   request
-} from 'utils'
+} from './utils'
 
 import {
   baseURL,
   scrapedData
-} from '../data'
+} from '../data/data'
 
 export const getHousesList = () => {
   const uri = `${baseURL}/index.php/Houses_of_Westeros`

@@ -3,7 +3,7 @@ import express from 'express'
 import {
   getHouse,
   getHousesList
-} from 'src/houses'
+} from './src/houses'
 
 const app = express()
 
